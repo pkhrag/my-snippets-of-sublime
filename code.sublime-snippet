@@ -16,7 +16,7 @@ void scanint(int &x)
     if(neg) x=-x;
 }
 
-//use scanint(&variable) for integer input instead of scanf
+//use scanint(variable) for integer input instead of scanf
 int main()
 {
 	${1:/* code */}
