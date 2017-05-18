@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+for(int itr=0;itr<${1:n};itr++)
+{
+	cout<<${2:arr[itr]}<<" ";
+}
+cout<<endl;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>printArr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
