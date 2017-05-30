@@ -2,6 +2,7 @@
 	<content><![CDATA[
 #include <bits/stdc++.h>
 #define gc getchar_unlocked
+#define ll long long int 
 
 using namespace std;
 
