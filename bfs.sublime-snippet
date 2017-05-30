@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+void bfs(vector<int> g[], int n, int start)
+{
+	int visited[n];
+	memset(visited, -1, sizeof(visited));
+	queue <int> q;
+	q.push(start);
+	visited[start] = 0;
+	while (!(q.empty()))
+	{
+		int curr = q.front();
+		q.pop();
+		for (int i = 0; i < int(g[curr].size()); ++i)
+		{
+			if (visited[g[curr][i] ]>=0)
+			{
+				continue;
+			}
+			else
+			{
+				q.push(g[curr][i]);
+				visited[g[curr][i]]=visited[curr]+1;
+			}
+		}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bfs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
