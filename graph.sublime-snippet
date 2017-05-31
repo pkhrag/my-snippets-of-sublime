@@ -10,8 +10,8 @@ for (int i = 0; i < m; ++i)
 {
 	scanint(u);
 	scanint(v);
-	a[u-1].push_back(v-1);
-	a[v-1].push_back(u-1);
+	g[u-1].push_back(v-1);
+	g[v-1].push_back(u-1);
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
